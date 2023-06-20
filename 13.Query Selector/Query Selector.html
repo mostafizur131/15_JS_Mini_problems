@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+    <style>
+        .paraDiv {
+            width: 600px;
+            height: 350px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <div class="paraDiv">
+        <p id="para1" class="red-text">This is paragraph 1.</p>
+        <p id="para2">This is paragraph 2.</p>
+        <p class="red-text">This is paragraph 3.</p>
+        <p id="para4">This is paragraph 4.</p>
+        <p id="para5">This is paragraph 5.</p>
+        <p class="red-text">This is paragraph 6.</p>
+        <p class="red-text">This is paragraph 7.</p>
+    </div>
+
+    <script>
+        function changeTextColor() {
+            const paragraphs = document.querySelectorAll(".red-text");
+
+            for (let i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.color = "red";
+            }
+        }
+
+        changeTextColor();
+    </script>
+</body>
+</html>

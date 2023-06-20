@@ -1,0 +1,19 @@
+#css_manipulate{
+    width: 600px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.para {
+    border: 1px solid #808080;
+    background-color: #808080;
+    padding: 15px;
+    color: #fff;
+}
+
+.yellow{
+    background-color: #eecc0a;
+    border: 1px solid #eecc0a;
+}
